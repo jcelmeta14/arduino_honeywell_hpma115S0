@@ -12,6 +12,11 @@ Honeywell::Honeywell(int softSerialRX, int softSerialTX, int delayBetweenMeasure
     _respinTime = respinTime;
 }
 
+Honeywell::begin(int baudRate)
+{
+    _honeywellSoftwareSerial.begin(baudRate);
+}
+
 bool Honeywell::stopAutoSend()
 {
     byte stopAutoSendCommand[] = {0x68, 0x01, 0x20, 0x77};

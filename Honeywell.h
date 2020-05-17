@@ -13,6 +13,7 @@
 class Honeywell {
     public:
         Honeywell(int softSerialRX, int softSerialTX, int delayBetweenMeasurement, int respinTime);
+        void begin(int baudRate);
         bool stopAutoSend();
         bool startMeasurement();
         bool stopMeasurement();
