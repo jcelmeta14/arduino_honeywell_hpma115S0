@@ -2,14 +2,17 @@
 #include "Honeywell.h"
 #include "SoftwareSerial.h"
 
-Honeywell::Honeywell(int softSerialRX, int softSerialTX, int delayBetweenMeasurement, int respinTime)
+Honeywell::Honeywell(int softSerialRX, int softSerialTX)
 :
     _honeywellSoftwareSerial(softSerialRX, softSerialTX)
 {
     _softSerialRX = softSerialRx;
     _softSerialTX = softSerialTX;
-    _delayBetweenMeasurement = delayBetweenMeasurement;
-    _respinTime = respinTime;
+}
+
+void begin(int baudRate)
+{
+    _honeywellSoftwareSerial.begin(baudRate);
 }
 
 bool Honeywell::stopAutoSend()

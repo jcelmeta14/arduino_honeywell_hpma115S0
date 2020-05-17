@@ -12,7 +12,8 @@
 
 class Honeywell {
     public:
-        Honeywell(int softSerialRX, int softSerialTX, int delayBetweenMeasurement, int respinTime);
+        Honeywell(int softSerialRX, int softSerialTX);
+        void begin(int baudRate);
         bool stopAutoSend();
         bool startMeasurement();
         bool stopMeasurement();
@@ -21,8 +22,6 @@ class Honeywell {
     private:
         int _softSerialRX;
         int _softSerialTX;
-        int _delayBetweenMeasurement;
-        int _respinTime;
         int _pm25;
         int _pm10;
         SoftwareSerial _honeywellSoftwareSerial(int softSerialRX, int softSerialTX);
