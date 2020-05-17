@@ -1,7 +1,8 @@
 /*
-  Morse.h - Library for flashing Morse code.
-  Created by David A. Mellis, November 2, 2007.
-  Released into the public domain.
+  Honeywell.h - Library for controlling Honeywell HPMA 115S0-XXX sensor.
+  Created by Jurgen Çelmeta, May 17, 2020.
+  
+  MIT License
 */
 #ifndef Honeywell_H
 #define Honeywell_H
