@@ -18,7 +18,7 @@ class Honeywell {
         bool startMeasurement();
         bool stopMeasurement();
         bool readMeasurement();
-        int[2] getMeasurement();
+        long[2] getMeasurement();
     private:
         int _softSerialRX;
         int _softSerialTX;

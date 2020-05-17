@@ -6,11 +6,16 @@ Honeywell::Honeywell(int softSerialRX, int softSerialTX)
 :
     _honeywellSoftwareSerial(softSerialRX, softSerialTX)
 {
-    _softSerialRX = softSerialRx;
+    _softSerialRX = softSerialRX;
     _softSerialTX = softSerialTX;
 }
 
 void begin(int baudRate)
+{
+    _honeywellSoftwareSerial.begin(baudRate);
+}
+
+Honeywell::begin(int baudRate)
 {
     _honeywellSoftwareSerial.begin(baudRate);
 }
@@ -125,7 +130,7 @@ bool Honeywell::readMeasurement()
     return false;
 }
 
-int[2] Honeywell::getMeasurement()
+long[2] Honeywell::getMeasurement()
 {
     return { _pm25, _pm10 };
 }
