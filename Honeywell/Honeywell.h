@@ -24,7 +24,7 @@ class Honeywell {
         int _respinTime;
         int _pm25;
         int _pm10;
-        SoftwareSerial _honeywellSoftwareSerial;
+        SoftwareSerial _honeywellSoftwareSerial(int softSerialRX, int softSerialTX);
 }
 
 #endif
