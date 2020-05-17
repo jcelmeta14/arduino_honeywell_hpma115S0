@@ -67,4 +67,4 @@ honeywell.readMeasurement(measurement);
 
 5. All methods return a `bool` to indicate whether the action was successful!
 
-6. You may check [this gist](https://gist.github.com/jcelmeta14/85d15d033db25961a66acad21d6ccbe5){:target="_blank"} for a simple example how to use this library with Arduino.
+6. You may check [this gist](https://gist.github.com/jcelmeta14/85d15d033db25961a66acad21d6ccbe5) for a simple example how to use this library with Arduino.
