@@ -127,7 +127,7 @@ bool Honeywell::readMeasurement()
     return false;
 }
 
-int[2] Honeywell::getMeasurement()
+long[2] Honeywell::getMeasurement()
 {
     return { _pm25, _pm10 };
 }
