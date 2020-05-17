@@ -17,14 +17,13 @@ class Honeywell {
         bool stopAutoSend();
         bool startMeasurement();
         bool stopMeasurement();
-        bool readMeasurement();
-        long[2] getMeasurement();
+        bool readMeasurement(long measurement[]);
     private:
         int _softSerialRX;
         int _softSerialTX;
-        int _pm25;
-        int _pm10;
-        SoftwareSerial _honeywellSoftwareSerial(int softSerialRX, int softSerialTX);
-}
+        long _pm25;
+        long _pm10;
+        SoftwareSerial _honeywellSoftwareSerial;
+};
 
 #endif
