@@ -10,7 +10,7 @@ This library uses SoftwareSerial to communicate with the Honeywell sensor, and t
 
 The idea behind this library is to make it easy to perform some of the basic functions of the sensor. There are 4 functions that can be used to start, stop, read measurements and to stop the autosend of data. Other functionalities may be implemented in the future
 
-**The sensors works with 3.3V be sure to step the voltage down from 5V to 3.3V**
+# **The sensors works with 3.3V be sure to step the voltage down from 5V to 3.3V**
 
 ### Docs
 
